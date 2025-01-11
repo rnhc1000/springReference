@@ -6,6 +6,8 @@ import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
+import java.util.List;
+import java.util.ArrayList;
 
 @Entity
 @Table(name = "tb_user")
@@ -29,6 +31,9 @@ public class User {
       inverseJoinColumns = @JoinColumn(name = "role_id")
   )
   Set<Role> roles = new HashSet<>();
+
+  @OneToMany(mappedBy = "user")
+  List<Notifications> notifications = new ArrayList<>();
 
   public User() {
   }
@@ -97,6 +102,10 @@ public class User {
 
   public void setRoles(Set<Role> roles) {
     this.roles = roles;
+  }
+
+  public List<Notifications> getNotifications() {
+    return notifications;
   }
 
   @Override

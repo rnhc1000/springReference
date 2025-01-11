@@ -18,3 +18,8 @@ INSERT INTO tb_course (name, img_uri, img_gray_uri) VALUES ('BOOTCAMP HTML', 'ht
 
 INSERT INTO tb_offer(edition, start_moment, end_moment, course_id) VALUES ('1.0', TIMESTAMP WITH TIME ZONE '2021-11-20T03:00:00.0000Z', TIMESTAMP WITH TIME ZONE '2022-11-19T03:00:00.0000Z', 1);
 INSERT INTO tb_offer(edition, start_moment, end_moment, course_id) VALUES ('1.0', TIMESTAMP WITH TIME ZONE '2022-12-20T03:00:00.0000Z', TIMESTAMP WITH TIME ZONE '2023-12-19T03:00:00.0000Z', 1);
+
+INSERT INTO tb_notifications (read, moment, user_id, route, text) VALUES (false, TIMESTAMP WITH TIME ZONE '2021-11-20T05:00:00.0000Z', 1, 'route', 'text')
+INSERT INTO tb_notifications (read, moment, user_id, route, text) VALUES (false, TIMESTAMP WITH TIME ZONE '2021-11-20T05:00:00.0000Z', 2, 'route', 'text')
+INSERT INTO tb_notifications (read, moment, user_id, route, text) VALUES (false, TIMESTAMP WITH TIME ZONE '2021-11-20T05:00:00.0000Z', 2, 'route', 'text')
+INSERT INTO tb_notifications (read, moment, user_id, route, text) VALUES (false, TIMESTAMP WITH TIME ZONE '2021-11-20T05:00:00.0000Z', 3, 'route', 'text')
