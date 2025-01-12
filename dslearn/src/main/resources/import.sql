@@ -23,3 +23,7 @@ INSERT INTO tb_notifications (read, moment, user_id, route, text) VALUES (false,
 INSERT INTO tb_notifications (read, moment, user_id, route, text) VALUES (false, TIMESTAMP WITH TIME ZONE '2021-11-20T05:00:00.0000Z', 2, 'route', 'text')
 INSERT INTO tb_notifications (read, moment, user_id, route, text) VALUES (false, TIMESTAMP WITH TIME ZONE '2021-11-20T05:00:00.0000Z', 2, 'route', 'text')
 INSERT INTO tb_notifications (read, moment, user_id, route, text) VALUES (false, TIMESTAMP WITH TIME ZONE '2021-11-20T05:00:00.0000Z', 3, 'route', 'text')
+
+INSERT INTO tb_resource(title, description, position, img_uri, type, offer_id) VALUES ('HTML Track', 'Main Track', 1,'https://images.pexels.com/photos/18999469/pexels-photo-18999469/free-photo-of-business-training-course.jpeg', 1, 1);
+INSERT INTO tb_resource(title, description, position, img_uri, type, offer_id) VALUES ('Forum', 'Q&A', 2,'https://images.pexels.com/photos/18999469/pexels-photo-18999469/free-photo-of-business-training-course.jpeg', 2, 1);
+INSERT INTO tb_resource(title, description, position, img_uri, type, offer_id) VALUES ('Live', 'Lives',3,'https://images.pexels.com/photos/18999469/pexels-photo-18999469/free-photo-of-business-training-course.jpeg', 3, 1);
