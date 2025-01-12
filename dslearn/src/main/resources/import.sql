@@ -27,3 +27,7 @@ INSERT INTO tb_notifications (read, moment, user_id, route, text) VALUES (false,
 INSERT INTO tb_resource(title, description, position, img_uri, type, offer_id) VALUES ('HTML Track', 'Main Track', 1,'https://images.pexels.com/photos/18999469/pexels-photo-18999469/free-photo-of-business-training-course.jpeg', 1, 1);
 INSERT INTO tb_resource(title, description, position, img_uri, type, offer_id) VALUES ('Forum', 'Q&A', 2,'https://images.pexels.com/photos/18999469/pexels-photo-18999469/free-photo-of-business-training-course.jpeg', 2, 1);
 INSERT INTO tb_resource(title, description, position, img_uri, type, offer_id) VALUES ('Live', 'Lives',3,'https://images.pexels.com/photos/18999469/pexels-photo-18999469/free-photo-of-business-training-course.jpeg', 3, 1);
+
+INSERT INTO tb_section (title, description, position, img_uri, resource_id, prerequisite_id) VALUES ('Chapter One', 'Getting Started', 1, 'https://images.pexels.com/photos/18999469/pexels-photo-18999469/free-photo-of-business-training-course.jpeg', 1, null);
+INSERT INTO tb_section (title, description, position, img_uri, resource_id, prerequisite_id) VALUES ('Chapter Two', 'Introduction', 2, 'https://images.pexels.com/photos/18999469/pexels-photo-18999469/free-photo-of-business-training-course.jpeg', 1, 1);
+INSERT INTO tb_section (title, description, position, img_uri, resource_id, prerequisite_id) VALUES ('Chapter Three', 'DOM', 3, 'https://images.pexels.com/photos/18999469/pexels-photo-18999469/free-photo-of-business-training-course.jpeg', 1, 2);
