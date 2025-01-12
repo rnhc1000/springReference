@@ -3,6 +3,8 @@ package br.dev.ferreiras.dslearn.entities;
 import jakarta.persistence.*;
 
 import java.time.Instant;
+import java.util.List;
+import java.util.ArrayList;
 import java.util.Objects;
 
 @Entity
@@ -20,6 +22,10 @@ public class Offer {
   @ManyToOne
   @JoinColumn(name = "course_id")
   private Course course;
+
+
+  @OneToMany(mappedBy = "offer")
+  List<Resource> resources = new ArrayList<>();
 
   public Offer() {
   }
@@ -40,11 +46,11 @@ public class Offer {
     this.id = id;
   }
 
-  public String getAddition() {
+  public String getEdition() {
     return edition;
   }
 
-  public void setAddition(String edition) {
+  public void setEdition(String edition) {
     this.edition = edition;
   }
 
@@ -70,6 +76,10 @@ public class Offer {
 
   public void setCourse(Course course) {
     this.course = course;
+  }
+
+  public List<Resource> getResources() {
+    return resources;
   }
 
   @Override
